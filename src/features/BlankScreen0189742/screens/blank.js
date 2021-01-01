@@ -27,16 +27,13 @@ export default class Blank extends React.Component {
   state = {}
 
   render = () => (
-    <ImageBackground
-      source={{
-        uri:
-          "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/Fondillo.jpg"
-      }}
-      style={styles.ImageBackground_1}
-    >
+    <ImageBackground style={styles.ImageBackground_1}>
       <Image
-        resizeMode="contain"
-        source={{ uri: "https://via.placeholder.com/150" }}
+        resizeMode="center"
+        source={{
+          uri:
+            "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/VIN-Check-Logo.png"
+        }}
         style={styles.Image_3}
       />
     </ImageBackground>
@@ -46,10 +43,10 @@ export default class Blank extends React.Component {
 const styles = StyleSheet.create({
   ImageBackground_1: {
     alignSelf: "center",
-    flexDirection: "row",
-    flexWrap: "nowrap",
-    alignContent: "flex-start",
+    flexDirection: "column",
+    flexWrap: "wrap",
+    alignContent: "center",
     backgroundSize: "contain"
   },
-  Image_3: { alignSelf: "flex-start" }
+  Image_3: { width: 250, height: 100, alignSelf: "flex-start" }
 })
