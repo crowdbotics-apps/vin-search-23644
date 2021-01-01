@@ -27,17 +27,20 @@ export default class Blank extends React.Component {
   state = {}
 
   render = () => (
-    <View>
-      <Image
-        resizeMode="cover"
-        source={{ uri: "https://via.placeholder.com/150" }}
-        style={styles.Image_3}
-      />
-    </View>
+    <ImageBackground
+      source={{
+        uri:
+          "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/VIN-Check-Logo.png"
+      }}
+      style={styles.ImageBackground_1}
+    />
   )
 }
 
 const styles = StyleSheet.create({
-  View_1: {},
-  Image_3: { width: 200, height: 200, alignSelf: "center" }
+  ImageBackground_1: {
+    flexWrap: "nowrap",
+    alignContent: "flex-start",
+    backgroundSize: "contain"
+  }
 })
